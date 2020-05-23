@@ -75,6 +75,9 @@ a {
 .name {
   color: #faae7b;
 }
+.bodyAbout {
+  height: 36rem;
+}
 @keyframes slide {
   0% {
     transform: translateX(-25%);
@@ -82,6 +85,9 @@ a {
   100% {
     transform: translateX(25%);
   }
+}
+.name {
+  color: #faae7b;
 }
 .content {
 }
@@ -161,14 +167,114 @@ a {
     transform: scaleY(0);
   }
 }
-.project {
-  width: 20rem;
-  border-radius: 13px;
-  border: 3px solid blue;
+.main-title {
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
 }
-.project img {
-  width: 20rem;
-  border-radius: 13px 0px 13px 0px;
+.containerProjects {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container {
+  padding: 1em 0;
+
+  width: 50%;
+}
+.containerProject {
+  display: flex;
+}
+.container .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content1 {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content1 .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 13px;
+}
+
+.content1:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content1:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.fadeIn-left {
+  left: 20%;
+}
+
+.fadeIn-right {
+  left: 80%;
 }
 @media screen and (min-width: 1280px) {
   .button {
@@ -186,5 +292,21 @@ a {
   .button {
     top: 36rem;
     left: 53rem;
+  }
+}
+.projects {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+  color: #714674;
+}
+.content-text img {
+  width: 4rem;
+  margin: 1rem;
+  border-radius: 13px;
+}
+@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+    width: 100%;
   }
 }

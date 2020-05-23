@@ -10,7 +10,7 @@ const About = (props) => {
       <div className="bg bg3"></div>
       <div className="content">
         <h1>
-          Hello, I'm <span classNameName="name"> Agustina!</span>
+          Hello, I'm <span className="name"> Agustina!</span>
         </h1>
         <h3>I'm a full-stack web developer based in Berlin.</h3>
       </div>
