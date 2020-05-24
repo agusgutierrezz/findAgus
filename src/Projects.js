@@ -1,6 +1,15 @@
 import React from "react";
 import Fade from "react-reveal/Zoom";
-
+import sass from "./images/sass.jpg";
+import mongo from "./images/mongo.jpg";
+import node from "./images/node.png";
+import mockUpCook from "./images/maqueta.jpg";
+import mockUpTutti from "./images/maquetaTutti.jpg";
+import mockUpFeriate from "./images/maquetaFeriate.jpg";
+import reactLogo from "./images/react.png";
+import php from "./images/php.png";
+import mysql from "./images/mysql.png";
+import laravel from "./images/laravel.png";
 import Contact from "./Contact.js";
 
 function Projects(props) {
@@ -12,15 +21,15 @@ function Projects(props) {
       <Fade>
         <div className="containerProject">
           <div className="projectImg">
-            <img class="content-image" src="\maqueta.jpg" />
+            <img class="content-image" src={mockUpCook} alt="" />
           </div>
 
           <div className="projectText">
             <h3>Iron Cook</h3>
             <div className="logos">
-              <img src="/sass.jpg" alt="logo" />
-              <img src="/mongo.jpg" alt="logo" />
-              <img src="/node.png" alt="logo" />
+              <img src={sass} alt="logo" />
+              <img src={mongo} alt="logo" />
+              <img src={node} alt="logo" />
             </div>
             <p>
               Social network cooking website where you could add your recipes,
@@ -47,10 +56,10 @@ function Projects(props) {
           <div className="projectText">
             <h3>Kinder Class</h3>
             <div className="logos">
-              <img src="/sass.jpg" alt="logo" />
-              <img src="/mongo.jpg" alt="logo" />
-              <img src="/node.png" alt="logo" />
-              <img src="/react.png" alt="logo" />
+              <img src={sass} alt="logo" />
+              <img src={mongo} alt="logo" />
+              <img src={node} alt="logo" />
+              <img src={reactLogo} alt="logo" />
             </div>
             <p>
               Educational playground for kids and teachers. Where kids play
@@ -69,7 +78,7 @@ function Projects(props) {
             </div>
           </div>
           <div className="projectImg">
-            <img class="content-image" src="\maquetaTutti.jpg" />
+            <img class="content-image" src={mockUpTutti} alt="" />
           </div>
         </div>
       </Fade>
@@ -78,15 +87,15 @@ function Projects(props) {
       <Fade>
         <div className="containerProject">
           <div className="projectImg">
-            <img class="content-image" src="\maquetaFeriate.jpg" />
+            <img class="content-image" src={mockUpFeriate} />
           </div>
 
           <div className="projectText">
             <h3>Feriate</h3>
             <div className="logos">
-              <img src="/laravel.png" alt="logo" />
-              <img src="/mysql.png" alt="logo" />
-              <img src="/php.png" alt="logo" />
+              <img src={laravel} alt="logo" />
+              <img src={mysql} alt="logo" />
+              <img src={php} alt="logo" />
             </div>
             <p>
               E-Commerce dedicated to the sale and barter of reused products to

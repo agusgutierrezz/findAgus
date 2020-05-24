@@ -1,4 +1,5 @@
 import React from "react";
+import profile from "./images/profile.jpeg";
 
 const Contact = (props) => {
   return (
@@ -17,7 +18,7 @@ const Contact = (props) => {
         </div>
 
         <div id="contact" className="contactText">
-          <img src="/profile.jpeg" alt="profile" />
+          <img src={profile} alt="profile" />
         </div>
       </div>
     </>
