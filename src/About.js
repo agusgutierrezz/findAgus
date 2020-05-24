@@ -12,7 +12,9 @@ const About = (props) => {
         <h1>
           Hello, I'm <span className="name"> Agustina!</span>
         </h1>
-        <h3>I'm a full-stack web developer based in Berlin.</h3>
+        <h3>
+          I'm a full-stack web developer based in Berlin, passionate for design.
+        </h3>
       </div>
       <Link to="/projects">
         <Button />

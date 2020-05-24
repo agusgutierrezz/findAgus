@@ -7,31 +7,29 @@
   align-items: center;
 }
 
-.item {
-  margin: 2rem;
-}
 a {
   text-decoration: none;
 }
-// a {
-//   position: relative;
-//   display: inline-block;
-//   font-size: 1em;
-//   font-family: "Roboto Slab", serif;
-//   font-weight: bold;
-//   color: #fd5800;
-//   overflow: hidden;
-//   background: linear-gradient(to right, #432371, #432371 50%, #faae7b 50%);
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-size: 200% 100%;
-//   background-position: 100%;
-//   transition: background-position 275ms ease;
-// }
-// a:hover {
-//   background-position: 0 100%;
-// }
+.Nav_link {
+  margin: 2rem;
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: #fd5800;
+  overflow: hidden;
+  background: linear-gradient(to right, #432371, #432371 50%, #faae7b 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.Nav_link:hover {
+  background-position: 0 100%;
+}
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #714674 50%, #432371 50%);
@@ -173,108 +171,179 @@ a {
   text-transform: capitalize;
   padding: 0.7em 0;
 }
-.containerProjects {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-.container {
-  padding: 1em 0;
-
-  width: 50%;
-}
-.containerProject {
-  display: flex;
-}
-.container .title {
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.content1 {
-  position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.content1 .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-  border-radius: 13px;
-}
-
-.content1:hover .content-overlay {
-  opacity: 1;
-}
 
 .content-image {
-  width: 100%;
+  width: 35rem;
   border-radius: 13px;
 }
-
-.content-details {
-  position: absolute;
+.containerProject,
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.containerProjects {
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+}
+.projectText {
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectText h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  margin: 0rem;
+}
+.projectText p {
+  font-size: 1.5rem;
+  width: 80%;
+}
+.logos img {
+  width: 4rem;
+
+  margin: 1rem;
+}
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px #714674;
+  width: 80%;
+}
+.projects {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+  color: #714674;
+}
+.projectImg {
+}
+.buttons a {
+  border: 2px solid #432371;
+  padding: 0.5rem;
+  width: 5rem;
+  margin: 1rem;
+  color: #432371;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.buttons a:hover {
+  border: 2px solid #faae7b;
+  background-color: #faae7b;
 }
 
-.content1:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
+.contact {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.content-details h3 {
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
+.contact h2 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  color: #432371;
+  width: 60%;
+}
+.contact p {
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+  color: #fd5800;
+  font-weight: bold;
+  width: 60%;
+}
+.media a {
+  color: #432371;
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.media {
+  width: 47%;
+}
+.contactHeader {
+  font-size: 5rem;
+  font-family: "Roboto Slab", serif;
+  color: #714674;
+  margin: 0rem;
+}
+.contactText img {
+  width: 14rem;
+  border-radius: 51%;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 764px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  .containerProject,
+  .buttons {
+    flex-direction: column;
+  }
+  .content-image {
+    width: 17rem;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+  .content h3 {
+    font-size: 1rem;
+  }
+  .projectText p {
+    display: none;
+  }
+  .button {
+    left: 5rem;
+    top: 31rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact h2 {
+    width: 100%;
+  }
+  .contact p {
+    width: 100%;
+  }
+  .contactHeader {
+    font-size: 4rem;
+  }
 }
 
-.content-details p {
-  color: #fff;
-  font-size: 0.8em;
-}
-
-.fadeIn-bottom {
-  top: 80%;
-}
-
-.fadeIn-top {
-  top: 20%;
-}
-
-.fadeIn-left {
-  left: 20%;
-}
-
-.fadeIn-right {
-  left: 80%;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  .containerProject,
+  .buttons {
+    flex-direction: column;
+  }
+  .content-image {
+    width: 17rem;
+  }
+  .projectText p {
+    display: none;
+  }
+  .button {
+    left: 17rem;
+    top: 42rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 1280px) {
   .button {
@@ -294,16 +363,7 @@ a {
     left: 53rem;
   }
 }
-.projects {
-  font-family: "Roboto Slab", serif;
-  font-size: 5rem;
-  color: #714674;
-}
-.content-text img {
-  width: 4rem;
-  margin: 1rem;
-  border-radius: 13px;
-}
+
 @media screen and (max-width: 640px) {
   .container {
     display: block;

@@ -1,20 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Navbar = (props) => {
   return (
     <div className="navigation">
       <div className="navigation-sub">
-        <Link to="/projects" className="item">
+        <NavLink to="/projects" className="Nav_link">
           Projects
-        </Link>
-        <Link to="/" className="item">
+        </NavLink>
+        <NavLink to="/" className="Nav_link">
           About
-        </Link>
-        <Link to="/contact" className="item">
-          Contact
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
