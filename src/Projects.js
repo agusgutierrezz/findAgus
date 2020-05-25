@@ -11,6 +11,7 @@ import php from "./images/php.png";
 import mysql from "./images/mysql.png";
 import laravel from "./images/laravel.png";
 import Contact from "./Contact.js";
+import Project from "./Project.js";
 
 function Projects(props) {
   return (
@@ -19,101 +20,43 @@ function Projects(props) {
         <h1 className="projects">Projects</h1>
       </Fade>
       <Fade>
-        <div className="containerProject">
-          <div className="projectImg">
-            <img class="content-image" src={mockUpCook} alt="" />
-          </div>
-
-          <div className="projectText">
-            <h3>Iron Cook</h3>
-            <div className="logos">
-              <img src={sass} alt="logo" />
-              <img src={mongo} alt="logo" />
-              <img src={node} alt="logo" />
-            </div>
-            <p>
-              Social network cooking website where you could add your recipes,
-              like and see friend's recipes and being able to add them to a
-              checkout shopping list.
-            </p>
-            <div className="buttons">
-              <a href="http://ironcook.herokuapp.com/" target="_blank">
-                Visit
-              </a>
-              <a
-                href="https://github.com/agusgutierrezz/cooking-website"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </div>
+        <Project
+          mockUp={mockUpCook}
+          name={"Iron Cook"}
+          logos={[sass, mongo, node]}
+          description={
+            "Social network cooking website where you could add your recipes, like and see friends recipes and being able to add them to a checkout shopping list."
+          }
+          link={"http://ironcook.herokuapp.com/"}
+          gitLink={"https://github.com/agusgutierrezz/cooking-website"}
+        />
       </Fade>
       <hr />
       <Fade>
-        <div className="containerProject">
-          <div className="projectText">
-            <h3>Kinder Class</h3>
-            <div className="logos">
-              <img src={sass} alt="logo" />
-              <img src={mongo} alt="logo" />
-              <img src={node} alt="logo" />
-              <img src={reactLogo} alt="logo" />
-            </div>
-            <p>
-              Educational playground for kids and teachers. Where kids play
-              games and teachers keep track of their improvements in real time.
-            </p>
-            <div className="buttons">
-              <a href="http://kinder-class.herokuapp.com/" target="_blank">
-                Visit
-              </a>
-              <a
-                href="https://github.com/agusgutierrezz/KinderClass"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          <div className="projectImg">
-            <img class="content-image" src={mockUpTutti} alt="" />
-          </div>
-        </div>
+        <Project
+          mockUp={mockUpCook}
+          name={"Kinder Class"}
+          logos={[sass, mongo, node, reactLogo]}
+          description={
+            " Educational playground for kids and teachers. Where kids play games and teachers keep track of their improvements in real time."
+          }
+          link={"http://kinder-class.herokuapp.com/"}
+          gitLink={"https://github.com/agusgutierrezz/KinderClass"}
+        />
       </Fade>
 
       <hr />
       <Fade>
-        <div className="containerProject">
-          <div className="projectImg">
-            <img class="content-image" src={mockUpFeriate} />
-          </div>
-
-          <div className="projectText">
-            <h3>Feriate</h3>
-            <div className="logos">
-              <img src={laravel} alt="logo" />
-              <img src={mysql} alt="logo" />
-              <img src={php} alt="logo" />
-            </div>
-            <p>
-              E-Commerce dedicated to the sale and barter of reused products to
-              promote sustainability
-            </p>
-            <div className="buttons">
-              <a href="http://feriate.dhalumnos.com/" target="_blank">
-                Visit
-              </a>
-              <a
-                href="https://github.com/agusgutierrezz/Feriate"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </div>
+        <Project
+          mockUp={mockUpFeriate}
+          name={"Feriate"}
+          logos={[laravel, mysql, php]}
+          description={
+            "  E-Commerce dedicated to the sale and barter of reused products to promote sustainability"
+          }
+          link={"http://feriate.dhalumnos.com/"}
+          gitLink={"https://github.com/agusgutierrezz/Feriate"}
+        />
       </Fade>
       <hr />
       <Fade>
