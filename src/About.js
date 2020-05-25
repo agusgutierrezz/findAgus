@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const About = (props) => {
   return (
-    <div classNameName="bodyAbout">
+    <div className="bodyAbout">
       <div className="bg"></div>
       <div className="bg bg2"></div>
       <div className="bg bg3"></div>

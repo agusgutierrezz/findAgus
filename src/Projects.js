@@ -34,7 +34,7 @@ function Projects(props) {
       <hr />
       <Fade>
         <Project
-          mockUp={mockUpCook}
+          mockUp={mockUpTutti}
           name={"Kinder Class"}
           logos={[sass, mongo, node, reactLogo]}
           description={

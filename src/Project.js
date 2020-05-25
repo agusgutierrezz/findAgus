@@ -4,7 +4,7 @@ const Project = (props) => {
   return (
     <div className="containerProject">
       <div className="projectImg">
-        <img class="content-image" src={props.mockUp} alt="" />
+        <img className="content-image" src={props.mockUp} alt="" />
       </div>
 
       <div className="projectText">
@@ -27,7 +27,5 @@ const Project = (props) => {
     </div>
   );
 };
-
-Project.propTypes = {};
 
 export default Project;
