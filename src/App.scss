@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+body {
+  height: 100vh;
+}
 .navigation {
   text-align: end;
   display: flex;
@@ -52,6 +55,9 @@ a {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   box-sizing: border-box;
   left: 50%;
@@ -87,13 +93,12 @@ a {
 .name {
   color: #faae7b;
 }
-.content {
+.buttonContainer {
 }
 .button {
+  margin-top: 2rem;
   --offset: 10px;
   --border-size: 2px;
-  top: 26rem;
-  left: 36rem;
   display: block;
   position: relative;
   padding: 1.5em 3em;
@@ -172,41 +177,74 @@ a {
   padding: 0.7em 0;
 }
 
-.content-image {
-  width: 35rem;
-  border-radius: 13px;
-}
-.containerProject,
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
 }
 .containerProjects {
-  text-align: center;
+  background-image: url("images/pattern.png");
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .projectText {
-  width: 40%;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-.projectText h3 {
-  font-family: "Roboto Slab", serif;
-  font-size: 3rem;
-  margin: 0rem;
-}
-.projectText p {
-  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 80%;
+  margin: 3rem auto;
+  font-family: "Roboto Slab", serif;
+  background-color: #fafafa91;
+  border: 3px solid #faae7b;
+  border-radius: 15px;
 }
-.logos img {
-  width: 4rem;
 
-  margin: 1rem;
+.projectTextReverse {
+  padding: 0.75rem;
+  background-color: #fafafa91;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #faae7b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin: 3rem auto;
+  font-family: "Roboto Slab", serif;
+}
+.cont-image {
+  width: 40%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  h3 {
+    color: #432371;
+    font-size: 3rem;
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+  }
+  p {
+    width: 50%;
+    color: #432371;
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+  }
 }
 hr {
   height: 12px;
@@ -214,48 +252,59 @@ hr {
   box-shadow: inset 0 12px 12px -12px #714674;
   width: 80%;
 }
-.projects {
+.title {
   font-family: "Roboto Slab", serif;
   font-size: 5rem;
   color: #714674;
+  text-align: center;
+  width: 100%;
+  margin: 2rem;
 }
-.projectImg {
+
+.logos {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  img {
+    width: 30%;
+  }
 }
-.buttons a {
-  border: 2px solid #432371;
-  padding: 0.5rem;
-  width: 5rem;
-  margin: 1rem;
-  color: #432371;
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
-}
-.buttons a:hover {
-  border: 2px solid #faae7b;
-  background-color: #faae7b;
+.button a {
+  text-decoration: none;
+  color: #faae7b;
 }
 
 .contact {
-  margin-top: 3rem;
-  padding-bottom: 3rem;
-  width: 70%;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
+  padding-bottom: 8rem;
+}
+.contact-title {
   display: flex;
   text-align: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-}
 
+  img {
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+  }
+}
 .contact h2 {
   font-size: 2rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
   color: #432371;
   width: 60%;
 }
 .contact p {
   font-size: 1rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
   color: #fd5800;
   font-weight: bold;
   width: 60%;
@@ -267,7 +316,8 @@ hr {
   font-weight: bold;
 }
 .media {
-  width: 47%;
+  margin-top: 2rem;
+  width: 100%;
 }
 .contactHeader {
   font-size: 5rem;
@@ -275,40 +325,35 @@ hr {
   color: #714674;
   margin: 0rem;
 }
-.contactText img {
-  width: 14rem;
-  border-radius: 51%;
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 14rem;
+    border-radius: 51%;
+  }
 }
-$pink: #fe3a7d;
-$orange: #ff7b0a;
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 764px) {
+@media only screen and (max-device-width: 764px) {
   .container {
     display: block;
     width: 100%;
   }
-  .containerProject,
-  .buttons {
-    flex-direction: column;
+
+  .title {
+    margin: 0;
   }
-  .content-image {
-    width: 17rem;
-  }
+
   .content h1 {
     font-size: 2rem;
   }
   .content h3 {
     font-size: 1rem;
   }
-  .projectText p {
-    display: none;
-  }
-  .button {
-    left: 5rem;
-    top: 31rem;
-  }
+
   .buttons {
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
   }
   .contact {
     flex-direction: column;
@@ -323,53 +368,28 @@ $orange: #ff7b0a;
   .contactHeader {
     font-size: 4rem;
   }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .container {
-    display: block;
-    width: 100%;
-  }
-  .containerProject,
-  .buttons {
+  .projectText {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    h3,
+    p {
+      display: none;
+    }
   }
-  .content-image {
-    width: 17rem;
-  }
-  .projectText p {
-    display: none;
-  }
-  .button {
-    left: 17rem;
-    top: 42rem;
-  }
-  .buttons {
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .button {
-    left: 33rem;
-    top: 29rem;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .button {
-    top: 22rem;
-    left: 42rem;
-  }
-}
-@media screen and (min-width: 1900px) {
-  .button {
-    top: 36rem;
-    left: 53rem;
-  }
-}
+  .projectTextReverse {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
 
-@media screen and (max-width: 640px) {
-  .container {
-    display: block;
+    justify-content: center;
+    p,
+    h3 {
+      display: none;
+    }
+  }
+  .cont-image {
     width: 100%;
   }
 }

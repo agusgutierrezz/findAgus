@@ -4,11 +4,9 @@ import profile from "./images/profile.jpeg";
 const Contact = (props) => {
   return (
     <>
-      <h1 className="contactHeader">Contact me!</h1>
       <div className="contact">
-        <div>
-          <h2> Ok, now that you know me, I want to get to know you too!</h2>
-          <p>I am available for a full-time position or freelance work</p>
+        <div className="contact-title">
+          <h1 className="title">Contact me!</h1>
           <div className="media">
             <a href="https://www.linkedin.com/in/agustina-gutierrez/">
               Linkedin
@@ -17,8 +15,11 @@ const Contact = (props) => {
           </div>
         </div>
 
-        <div id="contact" className="contactText">
+        <div id="" className="contactText">
           <img src={profile} alt="profile" />
+          <h2> Ok, now that you know me, I want to get to know you too!</h2>
+          <br />
+          <p>I am available for a full-time position or freelance work</p>
         </div>
       </div>
     </>
