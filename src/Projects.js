@@ -24,13 +24,14 @@ function Projects(props) {
         <div className="aux">
           <Project
             mockUp={mockUpRepad}
-            direction={true}
             name={"What´s for dinner?"}
             logos={[sass, reactLogo]}
             description={"Healthy recipe advisor"}
             link={"https://agusgutierrezz.github.io/drag-drop/"}
             gitLink={"https://github.com/agusgutierrezz/drag-drop"}
           />
+          <hr />
+
           <Project
             direction={true}
             mockUp={mockUpCook}
@@ -42,6 +43,8 @@ function Projects(props) {
             link={"http://ironcook.herokuapp.com/"}
             gitLink={"https://github.com/agusgutierrezz/cooking-website"}
           />
+          <hr />
+
           <Project
             mockUp={mockUpTutti}
             name={"Kinder Class"}
@@ -52,10 +55,12 @@ function Projects(props) {
             link={"http://kinder-class.herokuapp.com/"}
             gitLink={"https://github.com/agusgutierrezz/KinderClass"}
           />
+          <hr />
 
           <Project
             mockUp={mockUpFeriate}
             name={"Feriate"}
+            direction={true}
             logos={[laravel, mysql, php]}
             description={
               "  E-Commerce dedicated to the sale and barter of reused products to promote sustainability"

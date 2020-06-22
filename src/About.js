@@ -18,7 +18,7 @@ const About = (props) => {
             design.
           </h3>
           <button className="button">
-            See my work
+            <a href="/projects">See my work</a>
             <div className="button__horizontal"></div>
             <div className="button__vertical"></div>
           </button>
